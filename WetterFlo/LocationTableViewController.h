@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LocationTableViewController.h
 //  WetterFlo
 //
 //  Created by Florian Schimanke on 18.08.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LocationTableViewController : UITableViewController
 
 @end
-
