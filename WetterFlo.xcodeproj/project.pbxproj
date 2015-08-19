@@ -13,6 +13,7 @@
 		9D194C771B83535000C4143A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D194C761B83535000C4143A /* Assets.xcassets */; };
 		9D194C7A1B83535000C4143A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D194C781B83535000C4143A /* LaunchScreen.storyboard */; };
 		9D194C831B83556000C4143A /* LocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D194C821B83556000C4143A /* LocationTableViewController.m */; };
+		9D194C891B8361FD00C4143A /* CityDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D194C881B8361FD00C4143A /* CityDetailViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9D194C7B1B83535000C4143A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D194C811B83556000C4143A /* LocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTableViewController.h; sourceTree = "<group>"; };
 		9D194C821B83556000C4143A /* LocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTableViewController.m; sourceTree = "<group>"; };
+		9D194C871B8361FD00C4143A /* CityDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityDetailViewViewController.h; path = ../CityDetailViewViewController.h; sourceTree = "<group>"; };
+		9D194C881B8361FD00C4143A /* CityDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityDetailViewViewController.m; path = ../CityDetailViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				9D194C6E1B83535000C4143A /* AppDelegate.m */,
 				9D194C811B83556000C4143A /* LocationTableViewController.h */,
 				9D194C821B83556000C4143A /* LocationTableViewController.m */,
+				9D194C871B8361FD00C4143A /* CityDetailViewViewController.h */,
+				9D194C881B8361FD00C4143A /* CityDetailViewViewController.m */,
 				9D194C731B83535000C4143A /* Main.storyboard */,
 				9D194C761B83535000C4143A /* Assets.xcassets */,
 				9D194C781B83535000C4143A /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				9D194C6F1B83535000C4143A /* AppDelegate.m in Sources */,
 				9D194C6C1B83535000C4143A /* main.m in Sources */,
 				9D194C831B83556000C4143A /* LocationTableViewController.m in Sources */,
+				9D194C891B8361FD00C4143A /* CityDetailViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

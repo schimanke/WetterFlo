@@ -7,6 +7,7 @@
 //
 
 #import "LocationTableViewController.h"
+#import "CityDetailViewViewController.h"
 
 @interface LocationTableViewController ()
 
@@ -32,24 +33,41 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return 4;
 }
 
-/*
+//- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(nonnull NSString *)title atIndex:(NSInteger)index: (NSInteger)section {
+//    
+//    title = @"Hallo Section";
+//    return 0;
+//}
+
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionName = @"dddd";
+    return  sectionName;
+    
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LocationTableCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    NSInteger row = indexPath.row;
+    cell.textLabel.text = [NSString stringWithFormat:@"Hameln %ld", row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"28°C - sonnig"];
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -85,14 +103,18 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"citySegue"]) {
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        [segue.destinationViewController setDetail: [NSString stringWithFormat: @"City: %ld in Section %ld", path.row, path.section]];
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
